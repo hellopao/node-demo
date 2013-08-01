@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <script src="../js/lib.js" type="text/javascript"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/demo.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="bigPop">
+        <header class="bigPop_title relative d-box">
+            <a href="javascript:;" class="button">取消</a>
+            <h3 class="graffitiTitle b-flex" style="margin-right: 150px;"><a href="javascript:;">我的涂鸦<i class="i-apgRename"></i></a><input type="text" name="" class="graffitiTxt dHide"></h3>
+            <span class="bigPop_title_set" style="position: absolute; right: 10px; text-align: right;">
+                <a href="javascript:;" class="button right-noCle">撤销<i class="i-up-graffiti"></i></a>
+                <!--i-up-graffiti2 灰色图标 btnGray灰色按钮-->
+                <a href="javascript:;" class="button left-noCle mr_7">恢复<i class="i-down-graffiti"></i></a>
+                <!--i-down-graffiti2 灰色图 btnGray灰色按钮标-->
+                <a href="javascript:;" class="button mr_20" id="clear">清空<i class="i-del"></i></a>
+                <a href="javascript:;" class="button btnGray pl_15 pr_15">完成</a>
+            </span>
+        </header>
+        <article class="d-box">
+            <section class="b-flex" style="overflow: hidden">
+                <canvas id="canvas" height="580" width="800" style="border:1px solid #000;"></canvas>
+            </section>
+            <aside class="graffitiSide">
+                <div class="colorCol">
+                    <a href="javascript:;" class="current"> <span class="bg_000"></span></a>
+                    <a href="javascript:;"><span class="bg_2E7DDF"></span></a>
+                    <a href="javascript:;"><span class="bg_1B9764"></span></a>
+                    <a href="javascript:;"><span class="bg_F8D251"></span></a>
+                    <a href="javascript:;"><span class="bg_D13D30"></span></a>
+                </div>
+                <div class="penCol">
+                    <a href="javascript:;" style="font-size: 12px;">●</a>
+                    <a href="javascript:;" class="current" style="font-size: 22px">●</a>
+                    <a href="javascript:;" style="font-size: 32px;">●</a>
+                </div>
+                <div class="penCol" style="border-top: 1px solid #DBDBDB;">
+                    <a href="javascript:;"><i class="i-erase"></i></a>
+                </div>
+            </aside>
+        </article>
+    </div>
+</body>
+</html>
