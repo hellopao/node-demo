@@ -13,6 +13,6 @@
 
 运行方法：
     
-    在根用node目录运行app.js，打开任意两款浏览器，地址栏中输入  http://localhost:8888/html/index.html. 
+    在根用node目录运行app.js，打开任意两款支持html5 canvas特性的浏览器，地址栏中输入  http://localhost:8888/html/index.html. 
     在其中一个浏览器上涂鸦，在另一个浏览器上就可以看到画的内容。
     
