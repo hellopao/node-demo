@@ -173,7 +173,7 @@ var MainView = Backbone.View.extend({
 var SocketModel = Backbone.Model.extend({
 
     initialize: function(options) {
-        this.socket = io.connect('http://localhost');
+        this.socket = io.connect('http://localhost:3000');
         this.socket.on('message',this.handleMessage);
         return this;
     },
