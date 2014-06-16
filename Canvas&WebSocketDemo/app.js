@@ -3,7 +3,7 @@ var http = require('http');
 var io = require('socket.io');
 var static = require('node-static');
 
-var PORT = 8888;
+var PORT = 3000;
 var staticServer = new static.Server(__dirname + '/static/');
 
 var server = http.createServer(function(req,res) {
